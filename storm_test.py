@@ -12,7 +12,7 @@ collection = db.lte_pgw_exp
 topology_path = "/home/vagrant/petrel_exp2/"
 submit_sh = topology_path + "cluster_run.sh"
 kill_sh = topology_path + "cluster_kill.sh"
-kill_all_sh = "/home/vagrant/kill_GenericTopology.sh"
+kill_all_sh = topology_path + "kill_GenericTopology.sh"
 
 # kill topology
 subprocess.call(["bash", kill_sh])
@@ -33,7 +33,7 @@ if check_count != 0:
 # start topology
 subprocess.call(["bash", submit_sh])
 print("submit topology done at {0}.".format(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
-time.sleep(25)  # topology deploying
+time.sleep(5)  # topology deploying
 print("start monitoring mongodb at {0}.".format(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
 
 # then check mongodb, out input data should be remodeled from 1085420 to 570720
