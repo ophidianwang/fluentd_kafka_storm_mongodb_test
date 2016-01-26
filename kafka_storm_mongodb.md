@@ -1,7 +1,7 @@
 environment
 ---
-3 VM(2 core & 16G ram) on Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz (4 core 8 thread)    
-Kafka 3 part 3 replica ; pure pykafka client consume performance: 75.5896468163 seconds consuming 1085594 messages    
+3 VM(2 core & 16G ram) on Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz (4 core 8 thread)  
+Kafka 3 part 3 replica ; pure pykafka client consume performance: 75.5896468163 seconds consuming 1085594 messages  
 mongodb 3 shard 1 replica  
 
 ===
@@ -132,8 +132,10 @@ Spout spend 137.029999971 seconds emitting 1000000 tuples
 Bolt spend 299.633217096 seconds dumping 1000000 records.  
 The 1th record walks through the topology in 19.8444778919 seconds  
 The 1000000th record walks through the topology in 182.457695007 seconds  
+
 ---
 stuck @ Split/Group bolt 2 times  
+
 ---
 
 ===

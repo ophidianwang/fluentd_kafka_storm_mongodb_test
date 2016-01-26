@@ -1,7 +1,7 @@
 environment
 ---
-3 VM(4 core & 16G ram) on Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz (4 core 8 thread)    
-Kafka 3 part 3 replica ; pure pykafka client consume performance: 75.5896468163 seconds consuming 1085594 messages    
+3 VM(4 core & 16G ram) on Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz (4 core 8 thread)  
+Kafka 3 part 3 replica ; pure pykafka client consume performance: 75.5896468163 seconds consuming 1085594 messages   
 mongodb 3 shard 1 replica  
 
 ===
@@ -132,9 +132,7 @@ The 1th record walks through the topology in 3.64515781403 seconds
 The 1000000th record walks through the topology in 49.8029808998 seconds  
 
 ---
-
----
-stuck @ Split bolt 2 times (thread not enough?)  
+stuck @ Split bolt many times (thread not enough?)  
 
 ===
 
@@ -192,6 +190,36 @@ The 1000000th record walks through the topology in 83.1663250923 seconds
 
 ---
 stuck @ Split bolt 1 times (thread not enough?)  
+
+===
+
+3 worker emit_thread 3 split 3 group 9 output:
+---
+709787 records  
+Spout spend 121.799999952 seconds consuming 1000000 messages  
+Spout spend 121.829999924 seconds emitting 1000000 tuples  
+Bolt spend 159.051470995 seconds dumping 1000000 records.  
+The 1th record walks through the topology in 3.89870500565 seconds  
+The 1000000th record walks through the topology in 41.1501760483 seconds  
+
+---
+710070 records  
+Spout spend 121.49000001 seconds consuming 1000000 messages  
+Spout spend 121.5 seconds emitting 1000000 tuples  
+Bolt spend 159.253730059 seconds dumping 1000000 records.  
+The 1th record walks through the topology in 3.75656604767 seconds  
+The 1000000th record walks through the topology in 41.5202960968 seconds  
+
+---
+711952 records  
+Spout spend 121.159999847 seconds consuming 1000000 messages  
+Spout spend 121.159999847 seconds emitting 1000000 tuples  
+Bolt spend 159.941496849 seconds dumping 1000000 records.  
+The 1th record walks through the topology in 5.37320804596 seconds  
+The 1000000th record walks through the topology in 44.1547050476 seconds  
+
+---
+stuck @ Split bolt 1 times (thread not enough?)
 
 ===
 

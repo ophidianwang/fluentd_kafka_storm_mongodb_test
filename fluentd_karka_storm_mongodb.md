@@ -3,6 +3,7 @@
 3.34873104095 seconds  
 3.31827497482 seconds  
 3.47082304955 seconds  
+
 ===
 
 100000 records in pure pykafka client ; kafka 1 part 1 rep ; auto-commit on:
@@ -10,6 +11,7 @@
 3.38462710381 seconds  
 3.4059150219 seconds  
 3.69096517563 seconds  
+
 ===
 
 100000 records in spout ; kafka 1 part 1 rep ; storm 1 worker 1 spout 1 split:
@@ -17,6 +19,7 @@
 14.079999923706055 seconds  
 15.100000143051147 seconds  
 14.06000018119812 seconds  
+
 ===
 
 100000 records in spout ; kafka 1 part 1 rep ; storm 3 worker 1 spout 1 split:
@@ -25,6 +28,7 @@
 14.71999979019165  
 10.109999895095825  
 15.980000019073486  
+
 ===
 
 100000 records in spout ; kafka 1 part 1 rep ; storm 3 worker 1 spout 6 split:
@@ -33,6 +37,7 @@
 10.380000114440918 seconds  
 11.700000047683716 seconds  
 10.880000114440918 seconds  
+
 ===
 
 100000 records in spout ; kafka 1 part 1 rep ; storm 3 worker 1 spout 12 split:
@@ -41,6 +46,7 @@
 12.02999997138977  
 11.569999933242798  
 11.97000002861023  
+
 ===
 
 100000 records ; fluentd 1 ; kafka 1 part 1 rep ; storm 1 worker 1 spout 1 split 1 group 1 output ; mongodb 3 shard:
@@ -53,6 +59,7 @@ ETL end at 1453263851.03 , 2016-01-20 04:24:11
 realtime lag of storm is 0.928633928299 seconds  
 (bolt, mongodb) spend 50.0737860203 seconds processing 100000 records.  
 ETL spend 73.3226358891 seconds processing 100000 records.  
+
 ===
 
 100000 records ; fluentd 1 ; kafka 1 part 1 rep ; storm 3 worker 1 spout 1 split 1 group 1 output ; mongodb 3 shard:
@@ -65,6 +72,7 @@ ETL end at 1453264347.1 , 2016-01-20 04:32:27
 realtime lag of storm is 0.00213623046875 seconds  
 (bolt, mongodb) spend 50.9771537781 seconds processing 100000 records.  
 ETL spend 75.9574007988 seconds processing 100000 records.  
+
 ===
 
 100000 records ; fluentd 1 ; kafka 1 part 1 rep ; storm 3 worker 1 spout 1 split 1 group 3 output ; mongodb 3 shard:  
@@ -77,6 +85,7 @@ ETL end at 1453263395.45 , 2016-01-20 04:16:35
 realtime lag of storm is 0.441990852356 seconds  
 (bolt, mongodb) spend 16.6323399544 seconds processing 100000 records.  
 ETL spend 39.7733469009 seconds processing 100000 records.  
+
 ===
 
 100000 records ; fluentd 1 ; kafka 1 part 1 rep ; storm 3 worker 1 spout 1 split 1 group 6 output ; mongodb 3 shard:
@@ -89,6 +98,7 @@ ETL end at 1453266634.21 , 2016-01-20 05:10:34
 realtime lag of storm is 0.104948043823 seconds  
 (bolt, mongodb) spend 9.42479681969 seconds processing 100000 records.  
 ETL spend 31.024091959 seconds processing 100000 records.  
+
 ===
 
 100000 records ; fluentd 1 ; kafka 1 part 1 rep ; storm 3 worker 1 spout 1 split 1 group 12 output ; mongodb 3 shard:
@@ -101,6 +111,7 @@ ETL end at 1453272702.3 , 2016-01-20 06:51:42
 realtime lag of storm is 0.571376085281 seconds  
 (bolt, mongodb) spend 8.00957584381 seconds processing 100000 records.  
 ETL spend 29.8791429996 seconds processing 100000 records.  
+
 ===
 
 100000 records ; fluentd 1 ; kafka 3 part 1 rep ; storm 1 worker 1 spout 1 split 1 group 1 output ; mongodb 3 shard:
@@ -113,6 +124,7 @@ ETL end at 1453269671.37 , 2016-01-20 06:01:11
 realtime lag of storm is 0.176622152328 seconds  
 (bolt, mongodb) spend 50.8684937954 seconds processing 100000 records.  
 ETL spend 73.1487038136 seconds processing 100000 records.  
+
 ===
 
 100000 records ; fluentd 1 ; kafka 1 part 2 rep ; storm 1 worker 1 spout 1 split 1 group 1 output ; mongodb 3 shard:
@@ -125,6 +137,7 @@ ETL end at 1453271277.84 , 2016-01-20 06:27:57
 realtime lag of storm is 0.117017030716 seconds  
 (bolt, mongodb) spend 51.4854400158 seconds processing 100000 records.  
 ETL spend 71.0381541252 seconds processing 100000 records.  
+
 ===
 
 100000 records ; fluentd 1 ; kafka 3 part 2 rep ; storm 1 worker 1 spout 1 split 1 group 1 output ; mongodb 3 shard:
